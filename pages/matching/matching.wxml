@@ -9,8 +9,11 @@
   <view class='side-me'>
     <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
   </view>
-  <image></image>
+  <image class="vs-img" src="./vs.png"></image>
   <view class='side-counter'>
     <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
   </view>
+  <text class="game-begin" selectable="false" space="false" decode="false">
+    对战即将开始
+  </text>
 </view>

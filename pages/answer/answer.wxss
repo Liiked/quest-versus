@@ -1,0 +1,92 @@
+/* pages/answer/answer.wxss */
+.score-table{
+  height: 300rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.vs-img{
+  width: 140rpx;
+  height: 180rpx;
+}
+
+.score-table .userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.single-player-board{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rpx;
+  min-width: 33%;
+}
+
+.single-player-board .total-score{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFB001;
+}
+
+.single-player-board .combo-score{
+  font-size: 1rem;
+  color: #FFB001;
+}
+
+/* 答题框  */
+.question-box{
+  border: 2px solid #14022A;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  padding-top: 100rpx;
+  margin: 40rpx 60rpx;
+  margin-top: 100rpx;
+}
+
+.question-box .question-title{
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+
+.question-list .question-item{
+  color: #14022A;
+  padding: 30rpx 0;
+  border-top: 2px solid lightgray;
+}
+
+/* 倒计时 */
+
+.question-table{
+  position: relative;
+  margin-top: 60rpx;
+}
+
+.countdown{
+  position: absolute;
+  padding: 30rpx 0;
+  border-radius: 20rpx;
+  border: 2px solid #14022A;
+  width: 50%;
+  text-align: center;
+  background: white; 
+  left: 100rpx;
+  top: 40rpx;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.countdown .countdown-background{
+  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  border-radius: 20rpx;
+  z-index: -1;
+}

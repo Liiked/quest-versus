@@ -1,0 +1,32 @@
+<!--pages/answer/answer.wxml-->
+
+<!-- 分数板 -->
+<view class='score-table'>
+  <view class="single-player-board player-left">
+    <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
+    <label class='total-score'>616</label>
+    <label class='combo-score'>combo x1</label>
+  </view>
+  <image class="vs-img" src='../matching/vs.png'></image>
+  <view class="single-player-board player-right">
+    <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
+    <label class='total-score'>616</label>
+    <label class='combo-score'>combo x1</label>
+  </view>
+</view>
+<!-- 答题区  -->
+<scroll-view scroll-y class='question-table'>
+    <view class='countdown'>
+      <view class='countdown-background'></view>
+      <text class='countdown-type'>普通题</text>
+      <text class='countdown-seconds'>5s</text>
+    </view>
+    <view class='question-box'>
+      <view class='question-title'>
+        世界四大洋中面积最小的是？
+      </view>
+      <view class='question-list'>
+        <view class='question-list-item' class=".question-item" wx:for="{{questionList}}" wx:for-index="idx" wx:for-item="item">{{item.title}}</view>
+      </view>
+    </view>
+</scroll-view>
