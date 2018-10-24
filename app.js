@@ -35,5 +35,22 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  setWatch(data, watch) {
+    Object.keys(watch).forEach(v => {
+      this.observe(data, v, watch[v])
+    })
+  },
+  observe(obj, key, fn) {
+    let val = obj[key]
+    Object.defineProperty(obj, key, {
+      set(value) {
+        val = value
+        fn(val)
+      },
+      get() {
+        return val
+      }
+    })
   }
 })
