@@ -1,0 +1,16 @@
+<!--pages/matching/matching.wxml-->
+<view class='matching' hidden="{{matching}}">
+  <view class='matching-inner'>
+    <image class='.userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
+    <text>匹配中...</text>
+  </view>
+</view>
+<view class='matched' hidden="{{!matching}}">
+  <view class='side-me'>
+    <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <image></image>
+  <view class='side-counter'>
+    <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}"></image>
+  </view>
+</view>

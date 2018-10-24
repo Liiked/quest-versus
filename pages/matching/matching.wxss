@@ -1,0 +1,77 @@
+/* pages/matching/matching.wxss */
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.matching{
+  position: fixed;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.matching-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fccd36;
+  font-weight: bold;
+}
+
+.matched {
+  
+}
+
+.matched .side-me, .matched .side-counter {
+  display: flex;
+  border: 2rpx solid lightgray;
+  box-shadow: 1px 0px 15px lightgray;
+  width: 60%;
+  background: white;
+}
+
+.matched .side-me {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  border-top-right-radius: 128rpx;
+  border-bottom-right-radius: 128rpx;
+  z-index: 1;
+   animation: moveleft 1s; 
+}
+
+.matched .side-counter {
+  position: absolute;
+  top: 46%;
+  right: 0;
+  z-index: 100;
+  border-top-left-radius: 128rpx;
+  border-bottom-left-radius: 128rpx;
+  flex-direction: row-reverse;
+  animation: moveright 1s;
+}
+
+@keyframes moveleft {
+  from {
+    left: -300px;
+  }
+  to{
+    left: 0;
+  }
+}
+
+@keyframes moveright {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0;
+  }
+}
